@@ -32,6 +32,14 @@ export default {
       }
     },
     {
+      name: 'pageImage',
+      title: 'Main image',
+      type: 'image',
+      options: {
+        hotspot: true
+      }
+    },
+    {
       name: 'categories',
       title: 'Categories',
       type: 'array',
