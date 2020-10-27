@@ -7,13 +7,13 @@ export default {
   icon,
   fields: [
     {
-      name: 'word',
+      name: 'name',
       title: 'Color Name',
       type: 'string'
     },
     {
-      name: 'color',
-      title: 'Color Definition',
+      name: 'code',
+      title: 'Color Code',
       type: 'color'
     }
   ]
