@@ -12,6 +12,7 @@ import author from './author'
 import glossary from './glossary'
 import colors from './colors'
 import appSettings from './appSettings'
+import resource from './resource'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -28,6 +29,7 @@ export default createSchema({
     glossary,
     colors,
     appSettings,
+    resource,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
