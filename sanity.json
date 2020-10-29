@@ -29,7 +29,7 @@
     },
     {
       "name": "part:@sanity/desk-tool/structure",
-      "path": "./deskStructure.js"
+      "path": "./structure/deskStructure.js"
     }
   ]
 }

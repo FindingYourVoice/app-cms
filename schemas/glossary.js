@@ -1,4 +1,4 @@
-import { FiBookOpen as icon } from 'react-icons/fi'
+import { FaBook as icon } from 'react-icons/fa'
 
 export default {
   name: 'glossary',
@@ -9,17 +9,20 @@ export default {
     {
       name: 'word',
       title: 'Word',
-      type: 'string'
+      type: 'string',
+      validation: Rule => Rule.required()
     },
     {
       name: 'phonetics',
       title: 'Phonetic Notation',
       type: 'string',
+      validation: Rule => Rule.required()
     },
     {
       name: 'category',
       title: 'Category',
       type: 'string',
+      validation: Rule => Rule.required(),
       options: {
         list: [
           { title: 'noun', value: 'noun' },
@@ -32,6 +35,7 @@ export default {
       name: 'description',
       title: 'Meaning Definition',
       type: 'text',
+      validation: Rule => Rule.required()
     },
   ]
 }

@@ -1,4 +1,4 @@
-import { FiBookOpen as icon } from 'react-icons/fi'
+import { RiContactsFill as icon } from 'react-icons/ri'
 
 export default {
   name: 'resource',
@@ -19,7 +19,7 @@ export default {
           {
               name: 'description',
               title: 'Description',
-              type: 'string',
+              type: 'text',
           },
           {
               name: 'phone',
@@ -34,6 +34,6 @@ export default {
 
       ]
     }
-    
+
   ]
 }
