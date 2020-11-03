@@ -17,6 +17,7 @@ import typesOfHazards from './typesOfHazards'
 import covidInfo from './covidInfo'
 import employmentStandards from './employmentStandards'
 import humanRights from './humanRights'
+import introSlides from './introSlides'
 
 import partner from './partner'
 import externalResource from './externalResource'
@@ -43,6 +44,7 @@ export default createSchema({
     covidInfo,
     employmentStandards,
     humanRights,
+    introSlides,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
