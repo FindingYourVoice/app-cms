@@ -1,6 +1,7 @@
 import S from '@sanity/desk-tool/structure-builder'
 import { VscSettings as settingsIcon } from 'react-icons/vsc'
 import { TiWarning as disclaimerIcon } from 'react-icons/ti'
+import { GoMegaphone as kyrIcon } from 'react-icons/go'
 
 export default () =>
   S.list()
@@ -11,11 +12,40 @@ export default () =>
         .icon(settingsIcon)
         .child(
           S.editor()
-            .schemaType( 'appSettings' )
-            .documentId( 'appSettings' )
             .title( 'App Settings' )
+            .documentId( 'appSettings' )
 
       ),
+      S.divider(),
+      S.listItem()
+        .title( 'Know Your Rights' )
+        .icon( kyrIcon )
+        .child(
+          S.editor()
+            .schemaType( 'knowYourRights' )
+            .documentId( 'knowYourRights' )
+            .title( 'Know Your Rights Screen Settings' )
+
+      ),
+      S.listItem()
+        .title( 'Occupational Health & Safety' )
+        .child(
+          S.editor()
+            .schemaType( 'ohs' )
+            .documentId( 'ohs' )
+            .title( 'OHS Screen Settings' )
+
+      ),
+      S.listItem()
+        .title( 'Types of Hazards' )
+        .child(
+          S.editor()
+            .schemaType( 'typesOfHazards' )
+            .documentId( 'typesOfHazards' )
+            .title( 'Types of Hazards Screen Settings' )
+
+        ),
+      S.divider(),
       S.listItem()
         .title( 'Disclaimer' )
         .icon( disclaimerIcon )
@@ -23,8 +53,8 @@ export default () =>
           S.editor()
             .schemaType( 'disclaimer' )
             .documentId( 'disclaimer' )
-            .title('Disclaimer Screen Settings' )
+            .title( 'Disclaimer Screen Settings' )
 
         ),
-      ...S.documentTypeListItems().filter( listItem => ![ 'appSettings', 'disclaimer' ].includes( listItem.getId() ) )
+      ...S.documentTypeListItems().filter( listItem => ![ 'appSettings', 'disclaimer', 'knowYourRights', 'ohs', 'typesOfHazards' ].includes( listItem.getId() ) )
     ])
