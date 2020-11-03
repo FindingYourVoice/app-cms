@@ -5,6 +5,12 @@ export default {
   title: 'Glossary',
   type: 'document',
   icon,
+  __experimental_actions: [
+    'create',
+    'update',
+    'delete',
+    'publish'
+  ],
   fields: [
     {
       name: 'word',
