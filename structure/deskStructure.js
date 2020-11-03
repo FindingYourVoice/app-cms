@@ -3,7 +3,7 @@ import { VscSettings as settingsIcon } from 'react-icons/vsc'
 import { TiWarning as disclaimerIcon } from 'react-icons/ti'
 import { GoMegaphone as kyrIcon } from 'react-icons/go'
 import { AiOutlineFieldTime as esIcon } from 'react-icons/ai'
-import { AiOutlineFieldTime as hrIcon } from 'react-icons/ai'
+import { GoLaw as hrIcon } from 'react-icons/go'
 
 export default () =>
   S.list()
