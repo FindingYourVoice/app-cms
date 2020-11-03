@@ -2,6 +2,7 @@ import S from '@sanity/desk-tool/structure-builder'
 import { VscSettings as settingsIcon } from 'react-icons/vsc'
 import { TiWarning as disclaimerIcon } from 'react-icons/ti'
 import { GoMegaphone as kyrIcon } from 'react-icons/go'
+import { RiHandHeartFill as ohsIcon } from 'react-icons/ri'
 
 export default () =>
   S.list()
@@ -29,6 +30,7 @@ export default () =>
       ),
       S.listItem()
         .title( 'Occupational Health & Safety' )
+        .icon( ohsIcon )
         .child(
           S.editor()
             .schemaType( 'ohs' )

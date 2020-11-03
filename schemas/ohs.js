@@ -1,6 +1,3 @@
-import { TiWarning as colorIcon } from 'react-icons/ti'
-
-
 export default {
   name: 'ohs',
   title: 'Occupational Health and Safety',
