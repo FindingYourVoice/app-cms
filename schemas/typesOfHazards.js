@@ -8,15 +8,6 @@ export default {
     //'delete',
     'publish'
   ],
-  fieldsets: [
-    { name: 'slide1', title: 'Slide 01' },
-
-    { name: 'slide2', title: 'Slide 02' },
-
-    { name: 'slide3', title: 'Slide 03' },
-
-    { name: 'slide4', title: 'Slide 04' }
-  ],
   fields: [
     {
       name: 'description',
@@ -24,58 +15,30 @@ export default {
       title: 'General Description',
     },
     {
-      title: 'Slide Title',
-      name: 'slide1Title',
-      type: 'string',
-      fieldset: 'slide1'
+      name: 'slide1',
+      title: 'Slide 01',
+      type: 'slide',
     },
     {
-      title: 'Slide Description',
-      name: 'slide1Description',
-      type: 'string',
-      fieldset: 'slide1',
+      name: 'slide2',
+      title: 'Slide 02',
+      type: 'slide',
     },
     {
-      title: 'Slide Title',
-      name: 'slide2Title',
-      type: 'string',
-      fieldset: 'slide2'
+      name: 'slide3',
+      title: 'Slide 03',
+      type: 'slide',
     },
     {
-      title: 'Slide Description',
-      name: 'slide2Description',
-      type: 'string',
-      fieldset: 'slide2',
-    },
-    {
-      title: 'Slide Title',
-      name: 'slide3Title',
-      type: 'string',
-      fieldset: 'slide3'
-    },
-    {
-      title: 'Slide Description',
-      name: 'slide3Description',
-      type: 'string',
-      fieldset: 'slide3',
-    },
-    {
-      title: 'Slide Title',
-      name: 'slide4Title',
-      type: 'string',
-      fieldset: 'slide4'
-    },
-    {
-      title: 'Slide Description',
-      name: 'slide4Description',
-      type: 'string',
-      fieldset: 'slide4',
+      name: 'slide4',
+      title: 'Slide 04',
+      type: 'slide',
     },
     {
       name: 'paragraph',
       type: 'text',
       title: 'Paragraph',
-      description: 'Paragraph before resource card',
+      description: 'Displayed before resource card',
     },
     {
       name: 'resourceCard',

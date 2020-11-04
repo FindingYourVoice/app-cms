@@ -1,9 +1,6 @@
-
-
-
 export default {
   name: 'employmentStandards',
-  title: 'Employment Stabndards',
+  title: 'Employment Standards',
   type: 'document',
   __experimental_actions: [
     //'create',
@@ -13,29 +10,9 @@ export default {
   ],
   fields: [
     {
-      name: 'pageTitle',
-      type: 'string',
-      title: 'Page Title',
-    },
-    {
-      name: 'paragraph1',
+      name: 'mainParagraph',
       type: 'text',
-      title: 'First Paragraph',
-    },
-    {
-        name: 'paragraph2',
-        type: 'text',
-        title: 'Second Paragraph',
-    },
-    {
-        name: 'paragrapgh3',
-        type: 'text',
-        title: 'Third Paragrapgh',
-    },
-    {
-        name: 'paragraph4',
-        type: 'text',
-        title: 'Fourth Paragraph',
+      title: 'Main Paragraph',
     },
     {
         name: 'resourceCard',
@@ -44,14 +21,14 @@ export default {
         to: [ { type: 'resource' } ]
     },
     {
-        name: 'paragraph5',
+        name: 'finalParagraph',
         type: 'text',
         title: 'Final Paragraph',
     },
     {
-        name: 'linkbutton',
-        type: 'externalResource',
-        title: 'External Resource Button',
+      name: 'button',
+      type: 'externalResource',
+      title: 'External Resource Button',
     }
   ]
 }

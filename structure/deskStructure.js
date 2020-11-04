@@ -5,20 +5,35 @@ import { GoMegaphone as kyrIcon } from 'react-icons/go'
 import { RiHandHeartFill as ohsIcon } from 'react-icons/ri'
 import { AiOutlineFieldTime as esIcon } from 'react-icons/ai'
 import { GoLaw as hrIcon } from 'react-icons/go'
+import { RiVirusFill as covidIcon } from 'react-icons/ri'
+import { RiSlideshow2Fill as slidesIcon } from 'react-icons/ri'
+import { GiFalling as hazardsIcon } from 'react-icons/gi'
+
+
 
 export default () =>
   S.list()
     .title( 'Content' )
     .items( [
+      // S.listItem()
+      //   .title( 'App Settings' )
+      //   .icon(settingsIcon)
+      //   .child(
+      //     S.editor()
+      //       .title( 'App Settings' )
+      //       .documentId( 'appSettings' )
+      // ),
+      // S.divider(),
       S.listItem()
-        .title( 'App Settings' )
-        .icon(settingsIcon)
+        .title( 'Intro Slides' )
+        .icon( slidesIcon )
         .child(
           S.editor()
-            .title( 'App Settings' )
-            .documentId( 'appSettings' )
+            .schemaType('introSlides')
+            .documentId( 'introSlides' )
+            .title( 'Intro Slides Settings' )
 
-      ),
+        ),
       S.divider(),
       S.listItem()
         .title( 'Know Your Rights' )
@@ -41,13 +56,23 @@ export default () =>
 
       ),
       S.listItem()
-      .title( 'Employment Standard' )
+        .title( 'Covid Information' )
+        .icon( covidIcon )
+        .child(
+          S.editor()
+            .schemaType( 'covidInfo' )
+            .documentId( 'covidInfo' )
+            .title( 'Covid Information Screen Settings' )
+
+      ),
+      S.listItem()
+      .title( 'Employment Standards' )
       .icon( esIcon )
       .child(
         S.editor()
           .schemaType( 'employmentStandards' )
           .documentId( 'employmentStandards' )
-          .title( 'ES Screen Settings' )
+          .title( 'Employment Standards Screen Settings' )
 
     ),
       S.listItem()
@@ -57,11 +82,12 @@ export default () =>
         S.editor()
           .schemaType( 'humanRights' )
           .documentId( 'humanRights' )
-          .title( 'HR Screen Settings' )
+          .title( 'Human Rights Screen Settings' )
 
     ),
       S.listItem()
         .title( 'Types of Hazards' )
+        .icon( hazardsIcon )
         .child(
           S.editor()
             .schemaType( 'typesOfHazards' )
@@ -79,6 +105,6 @@ export default () =>
             .documentId( 'disclaimer' )
             .title( 'Disclaimer Screen Settings' )
 
-        ),
-      ...S.documentTypeListItems().filter( listItem => ![ 'appSettings', 'disclaimer', 'knowYourRights', 'ohs', 'typesOfHazards', 'employmentStandards', 'humanRights'  ].includes( listItem.getId() ) )
-    ])
+      )
+    ]
+  )

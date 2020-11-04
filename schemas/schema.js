@@ -8,19 +8,21 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import blockContent from './blockContent'
 import appSettings from './appSettings'
 
-import glossary from './glossary'
-import resource from './resource'
-import disclaimer from './disclaimer'
+import introSlides from './introSlides'
 import knowYourRights from './knowYourRights'
 import ohs from './ohs'
 import typesOfHazards from './typesOfHazards'
 import covidInfo from './covidInfo'
 import employmentStandards from './employmentStandards'
 import humanRights from './humanRights'
-import introSlides from './introSlides'
+import resource from './resource'
+import glossary from './glossary'
+import disclaimer from './disclaimer'
 
 import partner from './partner'
 import externalResource from './externalResource'
+import unorderedListItem from './unorderedListItem'
+import slide from './slide'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -49,6 +51,8 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     blockContent,
     partner,
-    externalResource
+    externalResource,
+    unorderedListItem,
+    slide
   ])
 })

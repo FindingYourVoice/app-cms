@@ -13,11 +13,6 @@ export default {
   ],
   fields: [
     {
-      name: 'pageTitle',
-      type: 'string',
-      title: 'Page Title',
-    },
-    {
       name: 'mainParagraph',
       type: 'text',
       title: 'Main Paragraph',
@@ -29,30 +24,21 @@ export default {
     },
     {
         name: 'covidSteps',
-        type: 'text',
         title: 'Covid Steps',
-        description: 'Steps after the bold text',
+        type: 'array',
+        of: [{type: 'unorderedListItem'}]
     },
     {
         name: 'finalParagraph',
         type: 'text',
         title: 'Final Paragraph',
-        description: 'The two paragraphs before the buttons',
+        description: 'The text before the external resources buttons.',
     },
     {
-        name: 'button1',
-        type: 'externalResource',
-        title: 'External Resource Button 1',
-    },
-    {
-        name: 'button2',
-        type: 'externalResource',
-        title: 'External Resource Button 2',
-    },
-    {
-        name: 'button3',
-        type: 'externalResource',
-        title: 'External Resource Button 3',
+      name: 'buttons',
+      type: 'array',
+        of: [{type: 'externalResource'}],
+        title: 'External Resource Buttons',
     }
   ]
 }

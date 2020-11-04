@@ -6,9 +6,9 @@ export default {
   title: 'Disclaimer',
   type: 'document',
   __experimental_actions: [
-    'create',
+    //'create',
     'update',
-    'delete',
+    //'delete',
     'publish'
   ],
   fields: [

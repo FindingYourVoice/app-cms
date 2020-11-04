@@ -10,11 +10,6 @@ export default {
     ],
     fields: [
       {
-        name: 'pageTitle',
-        type: 'string',
-        title: 'Page Title',
-      },
-      {
         name: 'paragraph1',
         type: 'text',
         title: 'First Paragraph',
@@ -34,6 +29,6 @@ export default {
         type: 'externalResource',
         title: 'External Resource Button 2',
     }
-      
+
     ]
   }

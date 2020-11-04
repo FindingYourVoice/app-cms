@@ -1,4 +1,4 @@
-import { FaHandshake as icon } from 'react-icons/fa'
+import { FaExternalLinkAlt as icon } from 'react-icons/fa'
 
 export default {
   name: 'externalResource',
