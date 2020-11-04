@@ -96,6 +96,8 @@ export default () =>
 
         ),
       S.divider(),
+      ...S.documentTypeListItems().filter( listItem => [ 'resource','glossary'  ].includes( listItem.getId() ) ),
+      S.divider(),
       S.listItem()
         .title( 'Disclaimer' )
         .icon( disclaimerIcon )
@@ -106,5 +108,6 @@ export default () =>
             .title( 'Disclaimer Screen Settings' )
 
       )
+
     ]
   )
