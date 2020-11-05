@@ -11,8 +11,10 @@ import appSettings from './appSettings'
 import introSlides from './introSlides'
 import knowYourRights from './knowYourRights'
 import ohs from './ohs'
-import typesOfHazards from './typesOfHazards'
 import covidInfo from './covidInfo'
+import typesOfHazards from './typesOfHazards'
+import basicRights from './basicRights'
+import wcb from './wcb'
 import employmentStandards from './employmentStandards'
 import humanRights from './humanRights'
 import resource from './resource'
@@ -33,17 +35,15 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
-    // post,
-    // author,
-    // category,
-    appSettings,
     glossary,
     resource,
     disclaimer,
     knowYourRights,
     ohs,
-    typesOfHazards,
     covidInfo,
+    typesOfHazards,
+    basicRights,
+    wcb,
     employmentStandards,
     humanRights,
     introSlides,

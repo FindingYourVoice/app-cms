@@ -23,5 +23,11 @@ export default {
       title: 'Description',
       type: 'text',
     },
+    {
+      name: 'backgroundColor',
+      title: 'Background Color',
+      description: 'This field is not mandatory. It only applies to some components, such as Basic Rights Slider.',
+      type: 'color',
+    },
   ]
 }

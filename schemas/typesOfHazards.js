@@ -34,11 +34,17 @@ export default {
       title: 'Slide 04',
       type: 'slide',
     },
+
+    {
+      name: 'customResourceCard',
+      title: 'Custom Resource Card',
+      type: 'resource',
+    },
     {
       name: 'paragraph',
       type: 'text',
-      title: 'Paragraph',
-      description: 'Displayed before resource card',
+      title: 'Resource Card Intro',
+      description: 'Paragraph displayed before last resource card',
     },
     {
       name: 'resourceCard',

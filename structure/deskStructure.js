@@ -8,22 +8,13 @@ import { GoLaw as hrIcon } from 'react-icons/go'
 import { RiVirusFill as covidIcon } from 'react-icons/ri'
 import { RiSlideshow2Fill as slidesIcon } from 'react-icons/ri'
 import { GiFalling as hazardsIcon } from 'react-icons/gi'
-
-
+import { GoChecklist as basicRightsIcon } from 'react-icons/go'
+import { FaUserInjured as wcbIcon } from 'react-icons/fa'
 
 export default () =>
   S.list()
     .title( 'Content' )
     .items( [
-      // S.listItem()
-      //   .title( 'App Settings' )
-      //   .icon(settingsIcon)
-      //   .child(
-      //     S.editor()
-      //       .title( 'App Settings' )
-      //       .documentId( 'appSettings' )
-      // ),
-      // S.divider(),
       S.listItem()
         .title( 'Intro Slides' )
         .icon( slidesIcon )
@@ -32,7 +23,6 @@ export default () =>
             .schemaType('introSlides')
             .documentId( 'introSlides' )
             .title( 'Intro Slides Settings' )
-
         ),
       S.divider(),
       S.listItem()
@@ -43,8 +33,8 @@ export default () =>
             .schemaType( 'knowYourRights' )
             .documentId( 'knowYourRights' )
             .title( 'Know Your Rights Screen Settings' )
-
       ),
+      S.divider(),
       S.listItem()
         .title( 'Occupational Health & Safety' )
         .icon( ohsIcon )
@@ -53,8 +43,26 @@ export default () =>
             .schemaType( 'ohs' )
             .documentId( 'ohs' )
             .title( 'OHS Screen Settings' )
-
       ),
+      S.listItem()
+        .title( 'Employment Standards' )
+        .icon( esIcon )
+        .child(
+          S.editor()
+            .schemaType( 'employmentStandards' )
+            .documentId( 'employmentStandards' )
+            .title( 'Employment Standards Screen Settings' )
+        ),
+      S.listItem()
+        .title( 'Human Rights' )
+        .icon( hrIcon )
+        .child(
+          S.editor()
+            .schemaType( 'humanRights' )
+            .documentId( 'humanRights' )
+            .title( 'Human Rights Screen Settings' )
+        ),
+      S.divider(),
       S.listItem()
         .title( 'Covid Information' )
         .icon( covidIcon )
@@ -63,28 +71,7 @@ export default () =>
             .schemaType( 'covidInfo' )
             .documentId( 'covidInfo' )
             .title( 'Covid Information Screen Settings' )
-
       ),
-      S.listItem()
-      .title( 'Employment Standards' )
-      .icon( esIcon )
-      .child(
-        S.editor()
-          .schemaType( 'employmentStandards' )
-          .documentId( 'employmentStandards' )
-          .title( 'Employment Standards Screen Settings' )
-
-    ),
-      S.listItem()
-      .title( 'Human Rights' )
-      .icon( hrIcon )
-      .child(
-        S.editor()
-          .schemaType( 'humanRights' )
-          .documentId( 'humanRights' )
-          .title( 'Human Rights Screen Settings' )
-
-    ),
       S.listItem()
         .title( 'Types of Hazards' )
         .icon( hazardsIcon )
@@ -93,8 +80,25 @@ export default () =>
             .schemaType( 'typesOfHazards' )
             .documentId( 'typesOfHazards' )
             .title( 'Types of Hazards Screen Settings' )
-
-        ),
+      ),
+      S.listItem()
+        .title( 'Basic Rights' )
+        .icon( basicRightsIcon )
+        .child(
+          S.editor()
+            .schemaType( 'basicRights' )
+            .documentId( 'basicRights' )
+            .title( 'Basic Rights Screen Settings' )
+      ),
+      S.listItem()
+        .title( 'Workers Compensation Board' )
+        .icon( wcbIcon )
+        .child(
+          S.editor()
+            .schemaType( 'wcb' )
+            .documentId( 'wcb' )
+            .title( 'Workers Compensation Board Screen Settings' )
+      ),
       S.divider(),
       ...S.documentTypeListItems().filter( listItem => [ 'resource','glossary'  ].includes( listItem.getId() ) ),
       S.divider(),
@@ -106,7 +110,6 @@ export default () =>
             .schemaType( 'disclaimer' )
             .documentId( 'disclaimer' )
             .title( 'Disclaimer Screen Settings' )
-
       )
 
     ]
