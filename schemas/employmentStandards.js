@@ -10,9 +10,19 @@ export default {
   ],
   fields: [
     {
-      name: 'mainParagraph',
+      name: 'paragraphOne',
       type: 'text',
-      title: 'Main Paragraph',
+      title: 'First Paragraph',
+    },
+    {
+      name: 'paragraphTwo',
+      type: 'text',
+      title: 'Second Paragraph',
+    },
+    {
+      name: 'paragraphThree',
+      type: 'text',
+      title: 'Third Paragraph',
     },
     {
         name: 'resourceCard',

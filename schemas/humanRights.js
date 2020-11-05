@@ -25,6 +25,11 @@ export default {
           title: 'Second Paragraph',
       },
       {
+          name: 'subParagraph2',
+          type: 'text',
+          title: 'Sub Paragraph',
+      },
+      {
         name: 'linkbutton2',
         type: 'externalResource',
         title: 'External Resource Button 2',

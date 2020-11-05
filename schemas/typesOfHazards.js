@@ -3,9 +3,9 @@ export default {
   title: 'Types Of Hazards',
   type: 'document',
   __experimental_actions: [
-    //'create',
+    'create',
     'update',
-    //'delete',
+    'delete',
     'publish'
   ],
   fields: [
