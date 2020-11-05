@@ -34,7 +34,11 @@ export default {
       title: 'Slide 04',
       type: 'slide',
     },
-
+    {
+      name: 'midParagraph',
+      type: 'text',
+      title: 'Mid Paragraph',
+    },
     {
       name: 'customResourceCard',
       title: 'Custom Resource Card',
